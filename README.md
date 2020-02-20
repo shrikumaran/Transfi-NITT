@@ -2,4 +2,4 @@
 This repo contains code for the YOLO implementation to count number of humans in a room.
 
 
-<img src="result.jpg">
+<img src="result.jpeg">
