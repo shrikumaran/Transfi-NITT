@@ -2,20 +2,21 @@
 import cv2
 import argparse
 import numpy as np
-import serial
+import serial # not needed if you dont use an arduino
 from time import sleep
-ser = serial.Serial('/dev/ttyACM0')  # open serial port
+ser = serial.Serial('/dev/ttyACM0')  # open serial port, used this to communicate with arduino
+# comment it out if not using with arduino
 ctr=300
 center_y=238
 topleft=0
 topright=0
 bottomleft=0
 bottomright=0
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) #getting the video feed
 c=0
 k=0
 i=0
-ap = argparse.ArgumentParser()
+ap = argparse.ArgumentParser() ## getting input arguments
 ap.add_argument('-i', '--image', required=True,
                 help = 'path to input image')
 ap.add_argument('-c', '--config', required=True,
