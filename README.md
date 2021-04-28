@@ -5,9 +5,12 @@ We implement a method to count the number of occupants in room, from the given v
 * Download pretrained YOLOv3 weights and it's config files from the below link.
 https://pjreddie.com/darknet/yolo/
 * Install OpenCV
-* To run inference on an image, run the below command in your terminal
+* To run inference on an image, run the below command in your terminal:
 python video.py --image <image_path> --config <yolo_config_path> --weights <yolo_weights_path> --classes <no_of_class>
+
+# Future improvements
+* Currently this model runs just using OpenCV and DNN modules, we can speed it up by using TFLite.
+* Using more latest object detection models like YOLOv5 or FRCNN.
 <br>
 <img src="result.jpeg">
 <br>
-Video.py is the code for running predictions
